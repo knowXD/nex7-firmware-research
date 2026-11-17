@@ -1,5 +1,14 @@
 # 针对一台已淘汰十多年的相机：索尼 NEX-7 的固件破解
 
+> **EN summary** — A student's attempt to reverse-engineer the firmware of a 2011
+> Sony NEX-7 (CXD4132 / BIONZ, 3x ARM11, Linux 2.6.29 RT), with AI assistance.
+> **Worked:** JPEG qscale patch, recording-time limit, verskip flashing, NAND partition dump.
+> **Didn't:** video bitrate (4 patch sets, zero effect), Android/PMCA (kernel has no binder),
+> menus (.uxc is a private format), colour matrices (not located, not verifiable).
+> **Stopped at:** SoC and NAND are stacked in one PoP package — going further needs BGA
+> rework/programming capability.
+> This repository contains documentation, tools and sources only — **no Sony firmware**.
+
 一个学生，用 AI 辅助，破解这台十多年前已淘汰的相机。
 
 十几年前有人试图破解过它，那时候能做的只是改改参数、换换区域设置，工具链还是别人写好的。
