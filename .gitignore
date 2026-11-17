@@ -1,0 +1,11 @@
+.lab/
+*.bin
+*.dat
+*.img
+*.ko
+*.so
+*.elf
+*.exe
+*.apk
+__pycache__/
+*.pyc
